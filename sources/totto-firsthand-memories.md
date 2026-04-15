@@ -6,7 +6,7 @@
 
 ## The Founding Meeting (April 23, 1998) — Totto Was Not There
 
-**Markus organized the founding meeting.** Totto was not in the room on April 23, 1998.
+**Markus Harboe organized the founding meeting.** Totto was not in the room on April 23, 1998.
 
 He arrived at the **next meeting**, and was selected as president there.
 
@@ -58,10 +58,48 @@ was therefore particularly striking.
 
 ---
 
+---
+
+## Markus Harboe — The Real Founder
+
+**Full name:** Markus Harboe
+**Confirmed:** He organized the April 23, 1998 founding meeting.
+
+**What we know from the helter page (2001):**
+- Listed #2 on the javaBin heroes list, immediately after Totto
+- Both Totto and Markus were at **E-Line Group ASA** in 2001
+  (Note: this means Totto was at E-Line Group, not ObjectWare, in 2001 — different from
+  the baseline which says ObjectWare. May have moved between the two.)
+- Markus was clearly one of the most active contributors in the founding era
+
+**From web sources:**
+- University of Oslo, 1982-1988
+- Got a photo with **James Gosling** (creator of Java) at JavaPolis 2003
+  — showing he remained active in the international Java community
+- Now at **mnemonic** (Oslo cybersecurity company) — moved from Java dev into security
+- CISSP certified
+
+**Not the same as Markus Kruger** — the baseline mentions Markus Kruger helping restart
+Oslo meetups in 2014. Markus Harboe is a different person, from the founding era.
+
+---
+
+## Totto's Company in 2001 — E-Line Group ASA
+
+The helter page (January 2001) lists Totto at **E-Line Group ASA** and **Zero Mindset**.
+The baseline says ObjectWare. Either:
+- He moved from ObjectWare to E-Line Group between founding and 2001, then back/elsewhere
+- Or he had multiple affiliations
+This is worth clarifying — E-Line Group ASA was a Norwegian IT company of the era.
+
+Also notable on the 2001 helter list: **Trygve Reenskaug** (Numerica Taskon) —
+the inventor of the MVC architectural pattern was a javaBin hero. The community
+had serious depth from the very beginning.
+
+---
+
 ## Open Questions (for follow-up)
 
-- Who is "Markus"? The baseline mentions Markus Kruger as someone who helped restart
-  Oslo meetups in 2014 — is this the same person, or a different Markus from 1998?
-- What was Totto's first impression of the founding meeting crowd when he arrived
-  at the second meeting?
+- What was Totto's first impression when he arrived at the second meeting?
 - What was the first thing he did as president?
+- The E-Line Group vs ObjectWare discrepancy — which company, when?
