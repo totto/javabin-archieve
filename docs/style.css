@@ -130,6 +130,13 @@ nav a:hover {
   border-bottom: 1px solid #eee;
 }
 
+.hero-logo {
+  display: block;
+  margin: 0 auto 2rem;
+  image-rendering: pixelated;
+  opacity: 0.85;
+}
+
 .hero-overline {
   font-family: system-ui, -apple-system, sans-serif;
   font-size: 0.75rem;
