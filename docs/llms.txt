@@ -1,0 +1,65 @@
+# javaBin — The Early Years: An Archive
+
+> Documentary archive of javaBin, the Norwegian Java User Group (founded 1998), and its evolution into JavaZone — Scandinavia's largest developer conference.
+
+## What This Is
+
+This site chronicles the founding and early years of javaBin (java.no) from 1996 to 2008, built from primary sources: firsthand accounts from the founders, Wayback Machine snapshots of the original java.no site, annual meeting records, and community tribute posts.
+
+**Live site:** https://totto.github.io/javabin-archieve/
+**Repository:** https://github.com/totto/javabin-archieve
+
+## Structured Navigation (for AI agents)
+
+This repository publishes a KCP manifest at https://totto.github.io/javabin-archieve/knowledge.yaml
+listing all research units with intent declarations.
+
+## Key Historical Facts
+
+- **April 23, 1998** — The founding meeting, organized by Markus Harboe at Institutt for Informatikk (IFI), Universitetet i Oslo
+- **Thor Henning Hetland (Totto)** — arrived at the second meeting, elected president; led javaBin for ~10 years
+- **Motivation** — Totto was shocked by the low level of programming knowledge in Norwegian businesses when he started as a consultant at Taskon after finishing NTH/NTNU; javaBin was a reaction to that gap
+- **java.no** — the community's web platform, a Java web application run on Solaris; later migrated to Linux; forum ran JForum (open-source, customized by Totto)
+- **JavaZone** — first held 2002 (350 attendees), grew to 3,600+ at Oslo Spektrum (2024)
+- **Markus Harboe** — the real founder; organized the April 23 founding meeting; later moved from Java development into cybersecurity (CISSP, now at mnemonic AS)
+- **Trygve Reenskaug** — inventor of the MVC architectural pattern (Numerica Taskon) — was listed as a javaBin hero in 2001
+- **Duke's Choice Award** — received 2019 for JavaZone
+
+## People (Key)
+
+| Person | Role |
+|--------|------|
+| Thor Henning Hetland (Totto) | President 1998–2007 (approx.), co-founder of JavaZone |
+| Markus Harboe | Organized the founding meeting (April 23, 1998) |
+| Stein Grimstad | One of the three pillars (Totto, Stein, Carl) per Olve Maudal's 2007 tribute |
+| Carl Onstad | One of the three pillars |
+| Olve Maudal | Wrote the definitive 2007 tribute post; later became a prominent javaBin presenter |
+| Trygve Reenskaug | MVC inventor, javaBin hero from the founding era |
+
+## Content Index
+
+**Site (docs/):**
+- `index.html` — Single-page documentary covering 8 sections: origin, people, platform, JavaZone, community, handover, legacy, sources
+
+**Research baseline (baseline/):**
+- `baseline-report.md` — Main research report: origins, timeline, key people, JavaZone history
+- `pre-cibus-era.md` — Technical infrastructure pre-Cibus: java.no stack, JForum, Solaris
+- `additional-findings.md` — Post-Totto leadership, financials, GitHub repos, board composition
+- `technical-infrastructure.md` — Detailed tech stack: Cibus CMS, Confluence wiki, server evolution
+- `known-people.csv` — 29 identified individuals with roles and years active
+- `board-history.csv` — Board composition by year
+- `javazone-timeline.csv` — JavaZone year-by-year: venue, attendance, theme
+
+**Primary sources (sources/):**
+- `totto-firsthand-memories.md` — Totto's own words (April 2026): founding, motivation, Markus Harboe, programming since age 10
+- `olve-maudal-tribute-2007.md` — Olve Maudal's tribute naming the three pillars
+- `jz09-official-backstory.md` — Official JavaZone 2009 backstory; confirms April 23, 1998 founding date
+
+**Wayback snapshots (snapshots/):**
+- `homepage-timeline.md` — java.no homepage captures 1997–2006 with extracted Norwegian text
+- `forum-snapshots.md` — Forum snapshots: 1999 nav structure, 2005 JForum platform confirmation
+
+## Tech
+
+Plain HTML + CSS. No build step, no JavaScript frameworks. Deploys on GitHub Pages from docs/.
+Research files are Markdown and CSV — human and machine readable.
