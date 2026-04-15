@@ -24,7 +24,15 @@ Founding details:
 - Portal operating with news, articles, event invitations, presentation
   archives, and meeting minutes
 
-## 3. The Forum Installation (2005) - KEY FINDING
+## 3. The Forum Platform - CONFIRMED: JForum (heavily customized)
+
+**Forum platform: JForum** — confirmed by Thor Henning Hetland (Totto), who installed
+and heavily customized it himself. JForum was a popular open-source Java forum engine
+(jforum.net), a natural fit for a Java User Group running a Java stack. The heavy
+customization explains why no obvious JForum fingerprints appeared in the archived HTML —
+it was deeply integrated into the java.no portal by Totto directly.
+
+## 4. The Forum Installation (2005) - KEY FINDING
 
 **"During 2005, a new forum was installed on java.no where over 1,300 messages were posted"**
 
