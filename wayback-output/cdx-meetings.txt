@@ -1,0 +1,4 @@
+20010116003900 http://www.java.no:80/?page=moter text/html 200 2875
+20010406175113 http://www.java.no:80/?page=moter text/html 200 2984
+20010812000158 http://www.java.no:80/?page=moter text/html 200 2982
+20011214081553 http://www.java.no:80/?page=moter text/html 200 2983

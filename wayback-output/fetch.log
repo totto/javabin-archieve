@@ -1,0 +1,30 @@
+==============================================
+ java.no Wayback Machine Fetcher
+ Period: 1996 - 2010
+ Output: wayback-output/
+==============================================
+
+[1/6] Fetching CDX index for java.no/* ...
+  Fetching CDX: java.no -> wayback-output/raw-cdx/cdx-java.no.txt
+  Fetching CDX: java.no/* -> wayback-output/raw-cdx/cdx-java.no_-.txt
+  WARN: Failed to fetch CDX for java.no/*
+  Fetching CDX: www.java.no -> wayback-output/raw-cdx/cdx-www.java.no.txt
+  Fetching CDX: www.java.no/* -> wayback-output/raw-cdx/cdx-www.java.no_-.txt
+  Merging CDX files...
+  Total unique snapshots: 1998
+
+[2/6] Filtering HTML snapshots...
+  HTML 200-OK snapshots: 1512
+
+[3/6] Categorizing snapshots...
+  frontpage: 0 snapshots
+  forum: 1234 snapshots
+  news: 0 snapshots
+  people: 0 snapshots
+  meetings: 4 snapshots
+  jobs: 0 snapshots
+
+[4/6] Downloading front page snapshots (sampled quarterly)...
+
+[5/6] Downloading forum snapshots (up to 200)...
+    GET: https://web.archive.org/web/20000523025146id_/http://www.java.no:80/forum/faq.html
