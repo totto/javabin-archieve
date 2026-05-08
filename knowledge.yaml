@@ -1,38 +1,65 @@
-# knowledge.yaml — Knowledge Context Protocol manifest
-# Spec: https://cantara.github.io/knowledge-context-protocol/
-# Project: javabin-archieve — The Early Years: History of javaBin (Norwegian Java User Group)
+version: "0.14"
 
+entity:
+  name: javabin-archieve
+  type: historical-archive
+  description: >
+    Forensic recovery of javaBin's early history (1998–2007). Founding timeline,
+    key people (29 identified), JavaZone year-by-year, technical infrastructure
+    (java.no, JForum, Cibus CMS), primary sources including Totto's firsthand
+    account. The only structured archive of the Norwegian Java community's origins.
+
+authority:
+  owner: Thor Henning Hetland (Totto)
+  repo: https://github.com/totto/javabin-archieve
+  license: Apache-2.0
+  org_manifest: https://wiki.totto.org/knowledge.yaml
+
+discovery:
+  provenance: canonical
+  confidence: high
+  staleness_days: 90
+
+signing:
+  scheme: ed25519
+  scope: this-manifest
+  public_key: https://wiki.totto.org/.well-known/kcp-signing-key.pub
+
+kcp_version: "0.14"
 project: javabin-archieve
-kcp_version: "0.5"
-version: 1.0.0
-updated: 2026-04-15
+language: en
+license: "Apache-2.0"
+runtime: static-html
+indexing: open
+updated: "2026-05-08"
 
 units:
 
-  # ── Overview ─────────────────────────────────────────────────────────────────
+  # ── Overview ──────────────────────────────────────────────────────────────────
 
   - id: overview
     path: README.md
     intent: "What is this archive, what does it contain, and how is it structured?"
     scope: global
     audience: [human, agent]
-    validated: 2026-04-15
+    validated: "2026-05-08"
+    triggers: [overview, archive, javaBin, history, structure]
 
   - id: site
     path: docs/index.html
     intent: "The full documentary site — 8 sections covering javaBin's founding, people, platform, JavaZone, community, handover, legacy, and sources"
     scope: global
     audience: [human]
-    validated: 2026-04-15
-    triggers: ["site", "documentary", "history overview", "javaBin history"]
+    validated: "2026-05-08"
+    triggers: [site, documentary, history overview, javaBin history]
 
   - id: llms-summary
     path: docs/llms.txt
     intent: "LLM-friendly summary of the archive: key facts, people table, content index — start here for quick orientation"
     scope: global
     audience: [agent]
-    validated: 2026-04-15
-    triggers: ["summary", "overview", "quick facts", "key people", "orientation"]
+    validated: "2026-05-08"
+    triggers: [summary, overview, quick facts, key people, orientation]
 
   # ── Research Baseline ─────────────────────────────────────────────────────────
 
@@ -41,130 +68,123 @@ units:
     intent: "Main research report: javaBin origins 1996–2024, founding timeline, key people, JavaZone history year by year, financial structure, legacy"
     scope: global
     audience: [human, agent]
-    validated: 2026-04-15
-    triggers: ["founding", "origins", "timeline", "JavaZone history", "when was javaBin founded", "1998"]
+    validated: "2026-05-08"
+    triggers: [founding, origins, timeline, JavaZone history, when was javaBin founded, "1998"]
 
   - id: pre-cibus-era
     path: baseline/pre-cibus-era.md
     intent: "Technical infrastructure of java.no in the pre-Cibus era: web server stack, JForum forum platform, Solaris, Java web application details"
     scope: global
     audience: [human, agent]
-    validated: 2026-04-15
-    triggers: ["JForum", "java.no platform", "technical infrastructure", "forum platform", "pre-Cibus", "Solaris"]
+    validated: "2026-05-08"
+    triggers: [JForum, java.no platform, technical infrastructure, forum platform, pre-Cibus, Solaris]
 
   - id: additional-findings
     path: baseline/additional-findings.md
     intent: "Research findings beyond the founding era: post-Totto leadership, financials, GitHub repositories, board composition after 2007"
     scope: global
     audience: [human, agent]
-    validated: 2026-04-15
-    triggers: ["post-Totto", "leadership after 2007", "financials", "GitHub repos", "board composition"]
+    validated: "2026-05-08"
+    triggers: [post-Totto, leadership after 2007, financials, GitHub repos, board composition]
 
   - id: technical-infrastructure
     path: baseline/technical-infrastructure.md
     intent: "Detailed technical stack history: Cibus CMS, Confluence wiki, server evolution from Solaris to Linux, hosting, infrastructure decisions"
     scope: global
     audience: [human, agent]
-    validated: 2026-04-15
-    triggers: ["Cibus", "Confluence", "tech stack", "server history", "CMS", "wiki"]
+    validated: "2026-05-08"
+    triggers: [Cibus, Confluence, tech stack, server history, CMS, wiki]
 
   - id: known-people
     path: baseline/known-people.csv
     intent: "29 identified individuals in the javaBin community with roles, years active, and affiliations"
     scope: global
     audience: [human, agent]
-    validated: 2026-04-15
-    triggers: ["people", "members", "who was in javaBin", "community members", "contributors"]
+    validated: "2026-05-08"
+    triggers: [people, members, who was in javaBin, community members, contributors]
 
   - id: board-history
     path: baseline/board-history.csv
     intent: "Board composition by year — who served on the javaBin board and when"
     scope: global
     audience: [human, agent]
-    validated: 2026-04-15
-    triggers: ["board", "styret", "board members", "who led javaBin"]
+    validated: "2026-05-08"
+    triggers: [board, styret, board members, who led javaBin]
 
   - id: javazone-timeline
     path: baseline/javazone-timeline.csv
     intent: "JavaZone year-by-year: venue, attendance figures, theme, key facts for each edition 2002–2024"
     scope: global
     audience: [human, agent]
-    validated: 2026-04-15
-    triggers: ["JavaZone", "conference history", "attendance", "venue", "JavaZone editions"]
+    validated: "2026-05-08"
+    triggers: [JavaZone, conference history, attendance, venue, JavaZone editions]
 
   # ── Primary Sources ───────────────────────────────────────────────────────────
 
   - id: totto-firsthand-memories
     path: sources/totto-firsthand-memories.md
-    intent: "Thor Henning Hetland (Totto)'s firsthand account (April 2026): who organized the founding meeting (Markus Harboe, not Totto), why Totto joined and became president, his motivation (shocked by low programming knowledge in Norwegian businesses), programming since age 10, Markus Harboe background"
+    intent: "Thor Henning Hetland (Totto)'s firsthand account: who organized the founding meeting (Markus Harboe, not Totto), why Totto joined, his motivation, programming since age 10"
     scope: global
     audience: [human, agent]
-    validated: 2026-04-15
-    triggers: ["Totto firsthand", "founding meeting", "who organized", "Markus Harboe", "why Totto joined", "motivation", "NTH NTNU", "Taskon", "programming since age 10", "E-Line Group"]
+    validated: "2026-05-08"
+    triggers: [Totto firsthand, founding meeting, who organized, Markus Harboe, why Totto joined, motivation]
 
   - id: olve-maudal-tribute
     path: sources/olve-maudal-tribute-2007.md
-    intent: "Olve Maudal's 2007 tribute post naming the three pillars of javaBin: Totto, Stein Grimstad, and Carl Onstad — the primary source for the inner circle"
+    intent: "Olve Maudal's 2007 tribute naming the three pillars of javaBin: Totto, Stein Grimstad, and Carl Onstad"
     scope: global
     audience: [human, agent]
-    validated: 2026-04-15
-    triggers: ["Olve Maudal", "tribute", "three pillars", "Stein Grimstad", "Carl Onstad", "2007 tribute"]
+    validated: "2026-05-08"
+    triggers: [Olve Maudal, tribute, three pillars, Stein Grimstad, Carl Onstad, 2007 tribute]
 
   - id: jz09-official-backstory
     path: sources/jz09-official-backstory.md
-    intent: "Official JavaZone 2009 backstory — confirms April 23, 1998 as the founding date, describes the origin narrative as published by javaBin"
+    intent: "Official JavaZone 2009 backstory — confirms April 23, 1998 as the founding date"
     scope: global
     audience: [human, agent]
-    validated: 2026-04-15
-    triggers: ["April 23 1998", "founding date", "official backstory", "JavaZone 2009", "origin story"]
+    validated: "2026-05-08"
+    triggers: [April 23 1998, founding date, official backstory, JavaZone 2009, origin story]
 
   # ── Wayback Snapshots ─────────────────────────────────────────────────────────
 
   - id: homepage-timeline
     path: snapshots/homepage-timeline.md
-    intent: "java.no homepage captures from the Wayback Machine 1997–2006 with extracted Norwegian text — shows what the site looked like and what was announced each year"
+    intent: "java.no homepage captures from the Wayback Machine 1997–2006 — shows what the site looked like and what was announced each year"
     scope: global
     audience: [human, agent]
-    validated: 2026-04-15
-    triggers: ["Wayback Machine", "homepage", "java.no snapshots", "1997", "1999", "2000", "2001", "site appearance", "old site"]
+    validated: "2026-05-08"
+    triggers: [Wayback Machine, homepage, java.no snapshots, "1997", "1999", "2000", "2001", site appearance]
 
   - id: forum-snapshots
     path: snapshots/forum-snapshots.md
-    intent: "Forum Wayback snapshots: 1999 nav structure showing community features, 2005 JForum page confirming platform by page title and URL pattern"
+    intent: "Forum Wayback snapshots: 1999 nav structure, 2005 JForum page confirming platform"
     scope: global
     audience: [human, agent]
-    validated: 2026-04-15
-    triggers: ["forum", "JForum confirmed", "forum platform", "1999 forum", "forum snapshots"]
+    validated: "2026-05-08"
+    triggers: [forum, JForum confirmed, forum platform, 1999 forum, forum snapshots]
 
 relationships:
   - from: totto-firsthand-memories
     to: baseline-report
     type: corrects
-
   - from: totto-firsthand-memories
     to: known-people
     type: enriches
-
   - from: olve-maudal-tribute
     to: baseline-report
     type: supports
-
   - from: jz09-official-backstory
     to: javazone-timeline
     type: supports
-
   - from: forum-snapshots
     to: pre-cibus-era
     type: supports
-
   - from: homepage-timeline
     to: baseline-report
     type: supports
-
   - from: technical-infrastructure
     to: pre-cibus-era
     type: depends_on
-
   - from: additional-findings
     to: baseline-report
     type: extends
