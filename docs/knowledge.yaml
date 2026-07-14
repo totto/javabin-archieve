@@ -24,6 +24,7 @@ signing:
   scheme: ed25519
   scope: this-manifest
   public_key: https://totto.github.io/javabin-archieve/.well-known/kcp-signing-key.pub
+  signature: https://totto.github.io/javabin-archieve/knowledge.yaml.sig
 
 kcp_version: "0.14"
 project: javabin-archieve
