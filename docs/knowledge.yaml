@@ -1,4 +1,4 @@
-version: "0.14"
+version: "0.26"
 
 entity:
   name: javabin-archieve
@@ -34,7 +34,7 @@ serving:
   mcp:
     - https://mcp-javabin-archieve.fly.dev/mcp
 
-kcp_version: "0.14"
+kcp_version: "0.26"
 project: javabin-archieve
 language: en
 license: "Apache-2.0"
