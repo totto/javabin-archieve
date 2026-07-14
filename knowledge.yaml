@@ -23,7 +23,7 @@ discovery:
 signing:
   scheme: ed25519
   scope: this-manifest
-  public_key: https://wiki.totto.org/.well-known/kcp-signing-key.pub
+  public_key: https://totto.github.io/javabin-archieve/.well-known/kcp-signing-key.pub
 
 kcp_version: "0.14"
 project: javabin-archieve
